@@ -1,0 +1,14 @@
+.technology-card{
+    display: flex;
+    flex-direction: column;
+    width: 5.5%;
+    margin-right: auto;
+
+    &__icon{
+        width: 95%;
+
+        &--github{
+            fill: $color-white;
+        }
+    }
+}

@@ -1,0 +1,41 @@
+.service{
+    display: flex;
+    position: relative;
+    align-items: center;
+    
+    &--opposite{
+        flex-direction: row-reverse;
+    }
+
+    &__text{
+        flex: 0 0 55%;
+    }
+
+    &:not(:last-child)::before{
+        height: 1px;
+        position: absolute;
+        left: 0;
+        bottom: -2.5rem; //medium margin / 2
+        content: '';
+        opacity: 0.6;
+        background: linear-gradient(to right, rgba($color-dark,0.1) 0%, $color-primary-dark 50%,rgba($color-dark,0.1) 100%);
+        width: 100%;
+    }
+
+    &__icon-box{
+        flex: 0 0 45%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    &__icon{
+        width: 90%;
+        height: 90%;
+    }
+
+}
+
+.service--opposite .service__icon-box{
+    justify-content: flex-start;
+}

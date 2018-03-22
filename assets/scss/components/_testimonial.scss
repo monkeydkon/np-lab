@@ -1,0 +1,63 @@
+.testimonial{
+    display:flex;
+    width: 100%;
+    justify-content:center;
+    align-items: center;
+    color: $color-dark;
+
+    &__indicator{
+        width: 6.5rem;
+        cursor: pointer;
+        transition: all .15s;
+    
+        &:hover{
+            transform: translateY(-.5rem);
+        }
+
+        &:active{
+            transform: translateY(0);
+        }
+        
+        &--left{
+            margin-right: 19.5rem;
+        }
+
+        &--right{
+            margin-left: 18rem;
+        }
+    }
+
+
+    &__text{
+        flex: 0 0 40%;
+        position: relative;
+    }
+
+    &__quote{
+        position: absolute;
+        top: -6rem;
+        left: -8rem;
+        width: 5.5rem;
+        height: 5.5rem;
+    }
+
+    &__cite{
+        display: block;
+        text-align: right;
+        font-weight: 600;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

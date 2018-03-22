@@ -1,0 +1,17 @@
+.work-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    &__icon{
+        fill: $color-primary-dark;
+        height: 8.5rem;
+        width: 8.5rem;
+
+    }
+
+    &:not(:last-child){
+        margin-right: 2%;
+    }
+}

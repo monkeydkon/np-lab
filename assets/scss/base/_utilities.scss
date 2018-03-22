@@ -1,0 +1,75 @@
+.text-center{
+  text-align: center;
+}
+
+.text-justify{
+  text-align: justify;
+}
+
+.text-right{
+  text-align: right;
+}
+
+.text-white{
+  color:$color-white;
+}
+
+
+
+.mb-xs {
+    margin-bottom: 1.2rem;
+  }
+  
+  .mb-sm {
+    margin-bottom: 2rem;
+  }
+  
+  .mb-md {
+    margin-bottom: 5rem;
+  }
+  
+  .mb-lg {
+    margin-bottom: 12rem;
+  }
+  
+  .mb-xl {
+    margin-bottom: 17rem;
+  }
+
+
+
+  
+  .mt-xs {
+    margin-top: 1.2rem;
+  }
+  
+  .mt-sm {
+    margin-top: 2rem;
+  }
+  
+  .mt-md {
+    margin-top: 5rem;
+  }
+  
+  .mt-lg {
+    margin-top: 12rem;
+  }
+  
+  .mt-xl {
+    margin-top: 17rem;
+  }
+
+
+  
+
+.container{
+  padding: 0 6%;
+}
+
+.container-small{
+    padding: 0 15%;
+}
+
+.pt-lg{
+    padding-top:17rem;
+}
