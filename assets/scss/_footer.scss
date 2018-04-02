@@ -1,0 +1,69 @@
+.footer{
+    background-color: $color-grey;
+
+    display: grid;
+    grid-template-columns: [full-start] 5% [footerset-1-start] auto [footerset-1-end logo-start] 1fr [logo-end footerset-2-start] auto [footerset-2-end] 5% [full-end];
+    grid-template-rows: auto min-content;
+
+
+    &__set{
+        display: flex;
+        margin-top: $medium-margin;
+
+        &--social{
+            grid-column: footerset-1-start / footerset-1-end;
+        }
+
+        &--scrolltop{
+            grid-column: footerset-2-start / footerset-2-end;
+        }
+    }
+
+    &__heading{
+        font-size: 1.9rem;
+        color: $color-white;
+        font-weight: 300;
+    }
+
+    &__circle{
+        width: 5rem;
+        height: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 2rem;
+        border:2px solid $color-primary-dark;
+        border-radius: 50%;
+        transform: translateY(-1.55rem);
+
+        &:hover,
+        &:active{
+            box-shadow: 0 0 12px 0 $color-primary-dark;
+        }
+
+        &--scrolltop{
+            border: 1px solid $color-secondary-dark;
+
+            &:hover,
+            &:active{
+                box-shadow: 0 0 12px 0 $color-secondary-dark;
+            }
+        }
+    }
+
+    &__icon{
+        fill:$color-white;
+        height: 2.5rem;
+        width: 2.5rem;
+        cursor: pointer;
+    }
+
+    &__text{
+        color: $color-white;
+        font-size: 1.5rem;
+        text-align: center;
+        padding: $extra-small-margin;
+
+        grid-column: full-start / full-end;
+    }
+}

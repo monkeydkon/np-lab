@@ -1,0 +1,197 @@
+.contact{
+    width: 100%;
+    margin-bottom: -$section-margin;
+    display: grid;
+    grid-template-columns: [full-start] 6% repeat(2, [col-start] 1fr [col-end]) 6% [full-end];
+    background-color: #f9f7f6;
+    padding: 2rem 0 $section-margin  0;
+
+    h2{
+        grid-column: 1 / -1;
+        margin-bottom: $xlarge-margin;
+    }
+
+
+    /*-- contact form container --*/
+    &__form-container{
+        grid-column: col-start 1 / col-start 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+
+        h3{
+            margin-bottom: $large-margin;
+        }
+    }
+
+
+    /*-- info container --*/
+    &__info-container{
+        grid-column: col-start 2 / col-start 3;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+
+        & > .info-card:not(:last-child){
+            margin-bottom: $medium-margin;
+        }
+
+        h3{
+            margin-bottom: $large-margin;
+        }
+    }
+}
+
+
+/*====== CONTACT FORM ======*/
+.form{
+    width: 80%;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: $extra-small-margin;
+
+    &__input{
+        width: 100%;
+        font-size: 1.6rem;
+        font-family: inherit;
+        color: inherit;
+        padding: 1.5rem 2rem;
+        border: none;
+        border-radius: 2px;
+        display: block;
+        border: 2px solid $color-primary;
+        transition: all .2s;
+        background-color: rgba($color-white, .1);
+
+        &:focus {
+            outline: none;
+            border: 2px solid $color-secondary;
+        }
+
+        &--firstname{
+            grid-row: 1 / 2;
+            grid-column: 1 / 2;
+        }
+
+        &--lastname{
+            grid-row: 1 / 2;
+            grid-column: 2 / 3;
+        }
+
+        &--email{
+            grid-row: 2 / 3;
+            grid-column: 1 / -1;
+        }
+    }
+
+    &__textarea{
+        margin-top: 1rem;
+        grid-column: 1 / -1;
+        width: 100%;
+        font-size: 1.6rem;
+        font-family: inherit;
+        color: inherit;
+        padding: 1.5rem 2rem;
+        border: none;
+        border-radius: 2px;
+        display: block;
+        border: 2px solid $color-primary;
+        resize: none ;
+        background-color: rgba($color-white, .1);
+
+        &:focus {
+            outline: none;
+            border: 2px solid $color-secondary;
+        }
+    }
+
+    &__btn{
+        grid-column: 2 / 3;
+        width: 100%;
+    }
+
+    &__text{
+        margin-top: 1rem;
+        grid-column: 1 / -1;
+        justify-self: start;
+        font-size: 1.7rem;
+        font-weight: 500;
+    }
+
+    &__radio-group {
+        width: 100%;
+        display: inline-block;
+        padding: .2rem;
+      }
+    
+      &__radio-input {
+        display: none;
+      }
+    
+      &__radio-label {
+        display: inline-block;
+        font-size: 1.6rem;
+        cursor: pointer;
+        position: relative;
+        padding-left: 4.5rem;
+      }
+    
+      &__radio-button {
+        height: 2.5rem;
+        width: 2.5rem;
+        border: 4px solid $color-primary;
+        border-radius: 50%;
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        top: -.2rem;
+    
+        &::after {
+          content: "";
+          display: block;
+          height: 1.1rem;
+          width: 1.1rem;
+          border-radius: 50%;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          background-color: $color-secondary;
+          opacity: 0;
+          transition: opacity .2s;
+        }
+      }
+    
+      &__radio-input:checked ~ &__radio-label &__radio-button::after {
+        opacity: 1;
+      }
+}
+
+
+/*====== INFO CARD ======*/
+.info-card{
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    grid-gap: .8rem;
+
+
+    &__icon{
+        grid-column: 1 / 2;
+        height: 3.5rem;
+        width: 3.5rem;
+        fill: $color-primary-dark;
+    }
+
+    h4{
+        grid-column: 2 / 3;
+    }
+
+    p{
+        grid-column: 1 / 3;
+    }
+}
+

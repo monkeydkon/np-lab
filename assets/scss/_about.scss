@@ -1,0 +1,161 @@
+.about{
+    width: 100%;
+    display: grid;
+    grid-template-columns: [full-start] 6% repeat(6, [col-start] 1fr [col-end]) 6% [full-end];
+    grid-row-gap: $subsection-margin;
+
+
+    /*-- about us --*/
+    &__about-us{
+        grid-column: col-start 1 / col-end 6;
+
+        h2{
+            margin-bottom: $medium-margin;
+        }
+    }
+
+
+    /*-- how we work --*/
+    &__how-we-work{
+        grid-column: col-start 1 / col-end 6;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: $small-margin;
+
+        h3{
+            margin-bottom: $medium-margin;
+            grid-column: 1 / -1;
+        }
+    }
+
+
+    /*-- meet the team --*/
+    &__meet-the-team{
+        grid-column: col-start 1 / col-end 6;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: $large-margin;
+
+        h3{
+            margin-bottom: $medium-margin;
+            grid-column: 1 / -1;
+        }
+    }
+
+
+    /*-- testimonials --*/
+    &__testimonials{
+        background-color: $color-secondary;
+        grid-column: full-start / full-end;
+        padding: .7rem 0 $large-margin 0;
+        display: grid;
+        grid-template-columns: [full-start] 1fr [indicator1-start] min-content [indicator1-end testimonial-start] 40% [testimonial-end indicator2-start] min-content [indicator2-end] 1fr [full-end];
+        grid-column-gap: 18rem;
+
+        h3{
+            grid-column: full-start / full-end;
+            text-align: center;
+            margin-bottom: $large-margin;
+        }
+
+        .indicator{
+            width: 6.5rem;
+            cursor: pointer;
+            transition: all .15s;
+        
+            &:hover{
+                transform: translateY(-.5rem);
+            }
+
+            &:active{
+                transform: translateY(0);
+            }
+
+            &--left{
+                grid-column: indicator1-start / indicator1-end;
+            }
+
+            &--right{
+                grid-column: indicator2-start / indicator2-end;
+            }
+        }
+
+    }
+
+}
+
+
+/*====== HOW WE WORK CARD ======*/
+.how-we-work-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    & > *:not(:last-child){
+        margin-bottom: $extra-small-margin;
+    }
+
+    &__icon{
+        fill: $color-primary-dark;
+        height: 8.5rem;
+        width: 8.5rem;
+    }
+}
+
+
+/*====== MEET THE TEAM CARD ======*/
+.meet-the-team-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    & > *:not(:last-child){
+        margin-bottom: $extra-small-margin;
+    }
+    
+    &__circle{
+        background-color: lighten( $color-primary-light, 7% );
+        width: 100%;
+        border-radius: 50%;
+        border: 1.2rem solid lighten( $color-primary-light, 14% );
+        position: relative;
+        
+        &::before{
+            content: '';
+            display: block;
+            padding-bottom: 100%;
+
+        }
+    }
+
+    &__img{
+        position: absolute;
+        bottom:3%;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 90%;
+    }
+}
+
+
+/*====== TESTIMONIAL ======*/
+.testimonial{
+    grid-column: testimonial-start / testimonial-end;
+    position: relative;
+
+    &__quote{
+        position: absolute;
+        top: -5rem;
+        left: -7rem;
+        width: 5.5rem;
+        height: 5.5rem;
+    }
+
+    &__cite{
+        font-weight: 600;
+        display: block;
+        text-align: right;
+    }
+}

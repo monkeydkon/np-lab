@@ -1,0 +1,78 @@
+.services{
+    width: 100%;
+    display: grid;
+    grid-template-columns: [full-start] 5% [mid-start] 1fr [mid-end] 5% [full-end];
+    grid-gap: $medium-margin;
+    background-color: #f9f7f6;
+    padding: 2rem 0 0 0;
+
+    h2{
+        grid-column: full-start / full-end;
+    }
+
+    .hr{
+        grid-column: mid-start / mid-end;
+    }
+
+    &__technologies{
+        grid-column: full-start / full-end;
+        margin-top: $medium-margin;
+        min-height: 27vh;
+        background-image: linear-gradient(rgba($color-dark, 0.7), rgba($color-dark, 0.7)), url("../img/technologies.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-column-gap: 5rem;
+        padding: 0 5rem;
+
+        h3{
+            color: $color-white;
+            grid-column: 1 / -1;
+            text-align: center;
+        }
+    }
+}
+
+
+
+/*====== SERVICE CARD ======*/
+.service-card{
+    grid-column: mid-start / mid-end;
+    display: grid;
+    grid-template-columns: 55% 45%;
+    grid-column-gap: $medium-margin;
+    align-items: center;
+
+    &__img{
+        width: calc(100% - 5rem);
+        align-self: top;
+        grid-row: 1 / 2;
+        grid-column: 2 / 3;
+    }
+
+    &__text > h3{
+        margin-bottom: $extra-small-margin;
+    }
+
+    &--reverse{
+        grid-template-columns: 45% 55%;
+
+        .service-card__img{
+            grid-column: 1 / 2;
+        }
+    }
+}
+
+
+.technology-card{
+    &__icon{
+        width: 100%;
+
+        &--github{
+            fill: $color-white;
+        }
+    }
+}

@@ -1,0 +1,126 @@
+.portfolio{
+    width: 100%;
+    display: grid;
+    grid-template-columns: [full-start] 9% [mid-start] 1fr [mid-end] 9% [full-end];
+    justify-items: center;
+
+    h2{
+        grid-column: full-start / full-end;
+        margin-bottom: $large-margin;
+
+        & > span:first-child{
+            margin-bottom: $extra-small-margin;
+        }
+    }
+
+    h3{
+        grid-column: full-start / full-end;
+        margin-bottom: $small-margin;
+    }
+
+    /*-- portfolio wrapper --*/
+    &__wrapper{
+        width: 100%;
+        grid-column: mid-start / mid-end;
+        display: grid;
+        grid-template-columns:repeat(3, 1fr);
+        grid-gap: $medium-margin;
+        
+        &:not(:last-child){
+            margin-bottom: $xlarge-margin;
+        }
+    }
+}
+
+
+/*====== PORTFOLIO CARD ======*/
+.portfolio-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    & > *:not(:last-child){
+        margin-bottom: 1rem;
+    }
+
+    box-shadow: 0 3px 8px rgba($color-primary-dark, 0.19), 0 1px 2px rgba($color-primary-dark, 0.23);
+    padding-bottom: 1rem;
+
+    &__img-container{
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+
+        &:hover > figcaption > svg{
+            opacity: 1;
+            top: 50%;
+        }
+
+        &::before{
+            content: '';
+            display: block;
+            padding-bottom: 75%;
+            background-color: red;
+        } 
+    }
+
+    &__img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+    }
+
+    &__heading{
+        font-size: 1.8rem;
+        letter-spacing: 2px;
+    }
+
+    &__text{
+        font-size: 1.5rem;
+        text-align: center;
+        line-height: 1.3;
+    }
+
+    &__btn{
+        letter-spacing: normal;
+        display: flex;
+
+        svg{
+            height: 2rem;
+            width: 2rem;
+            margin-right: .7rem;
+            fill: $color-white;
+        }
+    }
+
+    figcaption{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba($color-grey, .7);
+    }
+
+    &__icon{
+        fill: $color-primary;
+        height: 6.5rem;
+        width: 6.5rem;
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        backface-visibility: hidden;
+        opacity: 0;
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        -o-transition: all .3s;
+        transition: all .3s;
+    }
+}
