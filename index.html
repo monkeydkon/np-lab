@@ -6,17 +6,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600" rel="stylesheet">
-
     <link rel="stylesheet" href="assets/css/style.css">
     <title>NP Lab | Net Programming Laboratory</title>
 </head>
 
 <body>
 
+
+    <!--====== NAVIGATION BAR ======-->
+    <nav class="navigation">
+<<<<<<< HEAD
+        <div class="navigation__logo-box">
+
+        </div>
+=======
+        <img src="" alt="nplab logo" class="navigation__logo">
+>>>>>>> 3649a29766e855e6d826728aa5b76ab17fc257c5
+
+        <button class="navigation__btn">
+            <span class="navigation__icon">&nbsp;</span>
+        </button>
+
+        <ul class="navigation__list">
+            <li class="navigation__item">
+                <a href="#home" class="navigation__link smoothscroll active">Home</a>
+            </li>
+
+            <li class="navigation__item">
+                <a href="#about" class="navigation__link smoothscroll">About</a>
+            </li>
+
+            <li class="navigation__item">
+                <a href="#services" class="navigation__link smoothscroll">Services</a>
+            </li>
+
+            <li class="navigation__item">
+                <a href="#portfolio" class="navigation__link smoothscroll">Portfolio</a>
+            </li>
+
+            <li class="navigation__item">
+                <a href="#contact" class="navigation__link smoothscroll">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+
+
+    <!--======BULLET NAVIGATION======-->
+    <ul class="bullet-nav">
+        <li class="bullet-nav__item bullet-nav__tooltip">
+            <span class="bullet-nav__tooltiptext">Home</span>
+            <a href="#home" class="bullet-nav__link smoothscroll active"></a>
+        </li>
+        <li class="bullet-nav__item bullet-nav__tooltip">
+            <span class="bullet-nav__tooltiptext">About</span>
+            <a href="#about" class="bullet-nav__link smoothscroll"></a>
+        </li>
+        <li class="bullet-nav__item bullet-nav__tooltip">
+            <span class="bullet-nav__tooltiptext">Services</span>
+            <a href="#services" class="bullet-nav__link smoothscroll"></a>
+        </li>
+        <li class="bullet-nav__item bullet-nav__tooltip">
+            <span class="bullet-nav__tooltiptext">Portfolio</span>
+            <a href="#portfolio" class="bullet-nav__link smoothscroll"></a>
+        </li>
+        <li class="bullet-nav__item bullet-nav__tooltip">
+            <span class="bullet-nav__tooltiptext">Contact</span>
+            <a href="#contact" class="bullet-nav__link smoothscroll"></a>
+        </li>
+    </ul>
+
+<<<<<<< HEAD
+
+
     <!--====== HOME SECTION ======-->
-    <header class="home" id="home">
+    <header class="home section" id="home">
 
         <h1 class="home__heading">
             <span class="home__heading--main">Net Programming
@@ -24,13 +88,13 @@
             </span>
 
             <span class="home__heading--sub">Web design & development, Wordpress development, E-commerce and
-                <a href="#services" onclick="return false;" class="btn-more">more</a>
+                <a href="#services" class="btn-more smoothscroll">more</a>
             </span>
         </h1>
 
         <a href="#" onclick="return false;" class="btn-contact home__btn">Start a project</a>
 
-        <a href="#about" onclick="return false" class="btn-scroll">
+        <a href="#about" class="btn-scroll smoothscroll">
             <span class="btn-scroll__dot"></span>
             <span class="btn-scroll__text">Scroll Down</span>
         </a>
@@ -40,7 +104,7 @@
 
 
     <!--====== ABOUT SECTION ======-->
-    <section class="about" id="about">
+    <section class="about section" id="about">
 
 
         <!-- about us -->
@@ -50,12 +114,9 @@
                 <span class="heading-secondary--sub">Who are we?</span>
             </h2>
 
-            <p class="paragraph-primary paragraph-primary--justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam laudantium totam libero. Natus incidunt est
-                id similique animi impedit officiis modi ab laboriosam, corporis repellendus, qui excepturi quidem atque
-                vero, ut dolor quasi facilis reprehenderit molestias assumenda alias, aperiam at! Reprehenderit excepturi
-                perspiciatis magni ipsum consectetur omnis ad nisi, nam reiciendis veritatis molestiae voluptatem maxime
-                fugit iusto ducimus repellat vel, at dolore recusandae modi esse consequuntur illo? Minus, sint. Dicta esse
-                id tenetur quaerat. Suscipit atque voluptate aut, nobis aliquam. </p>
+            <p class="paragraph-primary paragraph-primary--justify">We are a team that consists of four young, creative and ambitious people. We all study computer science and share the same passion, solving 
+problems. This project is the result after months of dreaming, evolving, learning new exciting things about the world of technology until we felt ready to start working with other people. That time has come. 
+The Net Programming Lab is here for you. We constantly keep track of new technologies. We bring you the most modern web technologies of our time. Don't be afraid. You trust us to help you. It's a deal.</p>
         </div>
 
 
@@ -63,51 +124,47 @@
         <div class="about__how-we-work">
             <h3 class="heading-tertiary heading-tertiary--center">How we work</h3>
 
-            <div class="how-we-work-card">
+            <div class="how-we-work-card scrollReveal" data-animation="moveInLeft">
                 <svg class="how-we-work-card__icon">
                     <use xlink:href="assets/img/sprite.svg#icon-line-graph"></use>
                 </svg>
 
                 <h4 class="heading-quaternary">Analysis & Specification</h4>
 
-                <p class="paragraph-primary paragraph-primary--center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, reprehenderit! Debitis mollitia id ducimus
-                    quis!
+                <p class="paragraph-primary paragraph-primary--center">First of all, we talk to our clients, trying to really understand what needs to be done. Then we discuss and find the most efficient way of acting.
                 </p>
             </div>
 
-            <div class="how-we-work-card">
+            <div class="how-we-work-card scrollReveal" data-animation="moveInLeft" data-timeout="200">
                 <svg class="how-we-work-card__icon">
                     <use xlink:href="assets/img/sprite.svg#icon-edit"></use>
                 </svg>
 
                 <h4 class="heading-quaternary">Blueprint & design</h4>
 
-                <p class="paragraph-primary paragraph-primary--center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, reprehenderit! Debitis mollitia id ducimus
-                    quis!
+                <p class="paragraph-primary paragraph-primary--center">But we never just start with coding. Before that, we visualise the project so that we make sure you get what you want. And that what you want is beautiful.
                 </p>
             </div>
 
-            <div class="how-we-work-card">
+            <div class="how-we-work-card scrollReveal" data-animation="moveInLeft" data-timeout="270">
                 <svg class="how-we-work-card__icon">
                     <use xlink:href="assets/img/sprite.svg#icon-cog"></use>
                 </svg>
 
                 <h4 class="heading-quaternary">Development</h4>
 
-                <p class="paragraph-primary paragraph-primary--center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, reprehenderit! Debitis mollitia id ducimus
-                    quis!
+                <p class="paragraph-primary paragraph-primary--center">Now is the time for the actual making of your website. As a team of four people, we split the project into parts, making it less and less dificcult to make mistakes.
                 </p>
             </div>
 
-            <div class="how-we-work-card">
+            <div class="how-we-work-card scrollReveal" data-animation="moveInLeft" data-timeout="340">
                 <svg class="how-we-work-card__icon">
                     <use xlink:href="assets/img/sprite.svg#icon-rocket"></use>
                 </svg>
 
                 <h4 class="heading-quaternary">Launch</h4>
 
-                <p class="paragraph-primary paragraph-primary--center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, reprehenderit! Debitis mollitia id ducimus
-                    quis!
+                <p class="paragraph-primary paragraph-primary--center">Finally, after your website is all ready, you can be sure that we will do all the necessary for your website to be online. You leave it all to us.
                 </p>
             </div>
         </div>
@@ -118,7 +175,7 @@
 
             <h3 class="heading-tertiary heading-tertiary--center about__title">Meet the team</h3>
 
-            <div class="meet-the-team-card">
+            <div class="meet-the-team-card scrollReveal" data-animation="moveInRight" data-timeout="340">
                 <div class="meet-the-team-card__circle">
                     <img src="assets/img/sav.png" alt="" class="meet-the-team-card__img">
                 </div>
@@ -128,7 +185,7 @@
                 <p class="paragraph-primary paragraph-primary--center">Full stack web developer, web designer</p>
             </div>
 
-            <div class="meet-the-team-card">
+            <div class="meet-the-team-card scrollReveal" data-animation="moveInRight" data-timeout="270">
                 <div class="meet-the-team-card__circle">
                     <img src="assets/img/kink.png" alt="" class="meet-the-team-card__img">
                 </div>
@@ -138,7 +195,7 @@
                 <p class="paragraph-primary paragraph-primary--center">Full stack web developer, web designer</p>
             </div>
 
-            <div class="meet-the-team-card">
+            <div class="meet-the-team-card scrollReveal" data-animation="moveInRight" data-timeout="200">
                 <div class="meet-the-team-card__circle">
                     <img src="assets/img/kostas.png" alt="" class="meet-the-team-card__img">
                 </div>
@@ -148,7 +205,7 @@
                 <p class="paragraph-primary paragraph-primary--center">Full stack web developer, web designer</p>
             </div>
 
-            <div class="meet-the-team-card">
+            <div class="meet-the-team-card scrollReveal" data-animation="moveInRight">
                 <div class="meet-the-team-card__circle">
                     <img src="assets/img/kon.png" alt="" class="meet-the-team-card__img">
                 </div>
@@ -161,7 +218,167 @@
 
 
         <!-- testimonials -->
-        <div class="about__testimonials">
+        <!-- <div class="about__testimonials">
+=======
+    
+
+    <!--====== MOBILE NAVIGATION ======-->
+    <nav class="mobile-nav">
+
+    </nav>
+
+
+
+    <main class="container-all">
+
+        <!--====== HOME SECTION ======-->
+        <header class="home section" id="home">
+
+            <h1 class="home__heading">
+                <span class="home__heading--main">Net Programming
+                    <span>Lab</span>
+                </span>
+
+                <span class="home__heading--sub">Web design & development, Wordpress development, E-commerce and
+                    <a href="#services" class="btn-more smoothscroll">more</a>
+                </span>
+            </h1>
+
+            <a href="#" onclick="return false;" class="btn-contact home__btn">Start a project</a>
+
+            <a href="#about" class="btn-scroll smoothscroll">
+                <span class="btn-scroll__dot"></span>
+                <span class="btn-scroll__text">Scroll Down</span>
+            </a>
+
+        </header>
+
+
+
+        <!--====== ABOUT SECTION ======-->
+        <section class="about section" id="about">
+
+
+            <!-- about us -->
+            <div class="about__about-us">
+                <h2 class="heading-secondary">
+                    <span class="heading-secondary--main">About Us</span>
+                    <span class="heading-secondary--sub">Who are we?</span>
+                </h2>
+
+                <p class="paragraph-primary paragraph-primary--justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam laudantium totam libero. Natus incidunt
+                    est id similique animi impedit officiis modi ab laboriosam, corporis repellendus, qui excepturi quidem
+                    atque vero, ut dolor quasi facilis reprehenderit molestias assumenda alias, aperiam at! Reprehenderit
+                    excepturi perspiciatis magni ipsum consectetur omnis ad nisi, nam reiciendis veritatis molestiae voluptatem
+                    maxime fugit iusto ducimus repellat vel, at dolore recusandae modi esse consequuntur illo? Minus, sint.
+                    Dicta esse id tenetur quaerat. Suscipit atque voluptate aut, nobis aliquam. </p>
+            </div>
+
+
+            <!-- how we work -->
+            <div class="about__how-we-work">
+                <h3 class="heading-tertiary heading-tertiary--center">How we work</h3>
+
+                <div class="how-we-work-card scrollReveal" data-animation="moveInLeft">
+                    <svg class="how-we-work-card__icon">
+                        <use xlink:href="assets/img/sprite.svg#icon-line-graph"></use>
+                    </svg>
+
+                    <h4 class="heading-quaternary">Analysis & Specification</h4>
+
+                    <p class="paragraph-primary paragraph-primary--center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, reprehenderit! Debitis mollitia id ducimus
+                        quis!
+                    </p>
+                </div>
+
+                <div class="how-we-work-card scrollReveal" data-animation="moveInLeft" data-timeout="200">
+                    <svg class="how-we-work-card__icon">
+                        <use xlink:href="assets/img/sprite.svg#icon-edit"></use>
+                    </svg>
+
+                    <h4 class="heading-quaternary">Blueprint & design</h4>
+
+                    <p class="paragraph-primary paragraph-primary--center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, reprehenderit! Debitis mollitia id ducimus
+                        quis!
+                    </p>
+                </div>
+
+                <div class="how-we-work-card scrollReveal" data-animation="moveInLeft" data-timeout="270">
+                    <svg class="how-we-work-card__icon">
+                        <use xlink:href="assets/img/sprite.svg#icon-cog"></use>
+                    </svg>
+
+                    <h4 class="heading-quaternary">Development</h4>
+
+                    <p class="paragraph-primary paragraph-primary--center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, reprehenderit! Debitis mollitia id ducimus
+                        quis!
+                    </p>
+                </div>
+
+                <div class="how-we-work-card scrollReveal" data-animation="moveInLeft" data-timeout="340">
+                    <svg class="how-we-work-card__icon">
+                        <use xlink:href="assets/img/sprite.svg#icon-rocket"></use>
+                    </svg>
+
+                    <h4 class="heading-quaternary">Launch</h4>
+
+                    <p class="paragraph-primary paragraph-primary--center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, reprehenderit! Debitis mollitia id ducimus
+                        quis!
+                    </p>
+                </div>
+            </div>
+
+
+            <!-- meet the team -->
+            <div class="about__meet-the-team">
+
+                <h3 class="heading-tertiary heading-tertiary--center about__title">Meet the team</h3>
+
+                <div class="meet-the-team-card scrollReveal" data-animation="moveInRight" data-timeout="340">
+                    <div class="meet-the-team-card__circle">
+                        <img src="assets/img/sav.png" alt="" class="meet-the-team-card__img">
+                    </div>
+
+                    <h4 class="heading-quaternary">John</h4>
+
+                    <p class="paragraph-primary paragraph-primary--center">Full stack web developer, web designer</p>
+                </div>
+
+                <div class="meet-the-team-card scrollReveal" data-animation="moveInRight" data-timeout="270">
+                    <div class="meet-the-team-card__circle">
+                        <img src="assets/img/kink.png" alt="" class="meet-the-team-card__img">
+                    </div>
+
+                    <h4 class="heading-quaternary">George</h4>
+
+                    <p class="paragraph-primary paragraph-primary--center">Full stack web developer, web designer</p>
+                </div>
+
+                <div class="meet-the-team-card scrollReveal" data-animation="moveInRight" data-timeout="200">
+                    <div class="meet-the-team-card__circle">
+                        <img src="assets/img/kostas.png" alt="" class="meet-the-team-card__img">
+                    </div>
+
+                    <h4 class="heading-quaternary">Kostas</h4>
+
+                    <p class="paragraph-primary paragraph-primary--center">Full stack web developer, web designer</p>
+                </div>
+
+                <div class="meet-the-team-card scrollReveal" data-animation="moveInRight">
+                    <div class="meet-the-team-card__circle">
+                        <img src="assets/img/kon.png" alt="" class="meet-the-team-card__img">
+                    </div>
+
+                    <h4 class="heading-quaternary">George</h4>
+
+                    <p class="paragraph-primary paragraph-primary--center">Full stack web developer, web designer</p>
+                </div>
+            </div>
+
+
+            <!-- testimonials -->
+            <!-- <div class="about__testimonials">
+>>>>>>> 3649a29766e855e6d826728aa5b76ab17fc257c5
 
             <h3 class="heading-tertiary">Client's feedback</h3>
 
@@ -169,7 +386,7 @@
                 <use xlink:href="assets/img/sprite.svg#icon-chevron-thin-left"></use>
             </svg>
 
-            <blockquote class="testimonial paragraph-primary">
+            <blockquote class="testimonial paragraph-primary carousel">
                 <svg class="testimonial__quote">
                     <use xlink:href="assets/img/sprite.svg#icon-quotes-left"></use>
                 </svg>
@@ -177,17 +394,34 @@
                 <cite class="paragraph-primary testimonial__cite">&mdash; Mr. Lorem Ipsum</cite>
             </blockquote>
 
+            <blockquote class="testimonial paragraph-primary carousel">
+                <svg class="testimonial__quote">
+                    <use xlink:href="assets/img/sprite.svg#icon-quotes-left"></use>
+                </svg>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At tempora voluptates animi vitae impedit repellendus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, impedit!</p>
+                <cite class="paragraph-primary testimonial__cite">&mdash; Mr. Lorem Ipsum2</cite>
+            </blockquote>
+
+            <blockquote class="testimonial paragraph-primary carousel">
+                <svg class="testimonial__quote">
+                    <use xlink:href="assets/img/sprite.svg#icon-quotes-left"></use>
+                </svg>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At tempora voluptates animi vitae impedit repellendus! Lorem ipsum dolor sit.</p>
+                <cite class="paragraph-primary testimonial__cite">&mdash; Mr. Lorem Ipsum3</cite>
+            </blockquote>
+
             <svg class="indicator indicator--right">
                 <use xlink:href="assets/img/sprite.svg#icon-chevron-thin-right"></use>
             </svg>
 
-        </div>
+        </div> -->
+<<<<<<< HEAD
     </section>
 
 
 
     <!--====== SERVICES SECTION ======-->
-    <section class="services" id="services">
+    <section class="services section" id="services">
         <h2 class="heading-secondary">
             <span class="heading-secondary--main">Our Services</span>
             <span class="heading-secondary--sub">What we do?</span>
@@ -196,12 +430,10 @@
         <div class="service-card">
             <div class="service-card__text">
                 <h3 class="heading-tertiary">Web design & development</h3>
-                <p class="paragraph-primary">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta consectetur repellat a minima dolores! Nobis,
-                    odio. Ullam vitae quam, iste soluta eaque non nulla nemo, quo, cumque sapiente sed aut earum saepe aperiam
-                    voluptatum eius incidunt exercitationem voluptas libero consequatur deleniti! Culpa commodi fuga itaque
-                    nisi quo aut, tempore expedita!</p>
+                <p class="paragraph-primary paragraph-primary--justify">We make beautiful, modern, responsive websites. Do you want to advertise yourself or your company? Do you want to do it the modern way?
+We are what you are looking for. This is what we do. Having years of learning, we can provide you with the best of services. The web is our home and we strive to make it even better.</p>
             </div>
-            <img class="service-card__img" src="assets/img/web.svg">
+            <img class="service-card__img scrollReveal" data-animation="moveInBottom" src="assets/img/web.svg">
         </div>
 
         <div class="hr"></div>
@@ -209,13 +441,11 @@
         <div class="service-card service-card--reverse">
             <div class="service-card__text">
                 <h3 class="heading-tertiary">Wordpress development</h3>
-                <p class="paragraph-primary">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta consectetur repellat a minima dolores! Nobis,
-                    odio. Ullam vitae quam, iste soluta eaque non nulla nemo, quo, cumque sapiente sed aut earum saepe aperiam
-                    voluptatum eius incidunt exercitationem voluptas libero consequatur deleniti! Culpa commodi fuga itaque
-                    nisi quo aut, tempore expedita!</p>
+                <p class="paragraph-primary paragraph-primary--justify">We guess that people want flexible websites that can be handled by their owners. This is the reason we use Wordpress. Whether it is
+a blog that you want, or a forum, Wordpress is the choice. It's simple and clean. You don't have to mess with any of the code.</p>
             </div>
 
-            <img class="service-card__img" src="assets/img/wp.svg">
+            <img class="service-card__img scrollReveal" data-animation="moveInBottom" src="assets/img/wp.svg">
         </div>
 
         <div class="hr"></div>
@@ -223,12 +453,10 @@
         <div class="service-card">
             <div class="service-card__text">
                 <h3 class="heading-tertiary">E-commerce</h3>
-                <p class="paragraph-primary">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta consectetur repellat a minima dolores! Nobis,
-                    odio. Ullam vitae quam, iste soluta eaque non nulla nemo, quo, cumque sapiente sed aut earum saepe aperiam
-                    voluptatum eius incidunt exercitationem voluptas libero consequatur deleniti! Culpa commodi fuga itaque
-                    nisi quo aut, tempore expedita!</p>
+                <p class="paragraph-primary paragraph-primary--justify">Even if it is products you want to sell, we also have the solution. Do you want to expand your business worldwide? We can help you
+get started by developing your online functional E-Shop. The future of your company is now in good hands. Sky is the limit.</p>
             </div>
-            <img class="service-card__img" src="assets/img/eshop.svg">
+            <img class="service-card__img scrollReveal" data-animation="moveInBottom" src="assets/img/eshop.svg">
         </div>
 
         <div class="hr"></div>
@@ -236,84 +464,82 @@
         <div class="service-card service-card--reverse">
             <div class="service-card__text">
                 <h3 class="heading-tertiary">Graphic & logo design</h3>
-                <p class="paragraph-primary">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta consectetur repellat a minima dolores! Nobis,
-                    odio. Ullam vitae quam, iste soluta eaque non nulla nemo, quo, cumque sapiente sed aut earum saepe aperiam
-                    voluptatum eius incidunt exercitationem voluptas libero consequatur deleniti! Culpa commodi fuga itaque
-                    nisi quo aut, tempore expedita!</p>
+                <p class="paragraph-primary paragraph-primary--justify">In our days, good aesthetics is essential. Let us carry on that weight too. Your team or company or even yourself can become much more appealing with the help of a nice looking logo. Whether it is a simple one, or a more complex. It is all about the beauty. You have to stick into the minds of the people that you are the best just by
+the first look. This is the only way you can look different in the internet.</p>
             </div>
-            <img class="service-card__img" src="assets/img/design.svg">
+            <img class="service-card__img scrollReveal" data-animation="moveInBottom" src="assets/img/design.svg">
         </div>
 
         <div class="services__technologies">
-            <h3 class="heading-tertiary">Technologies we use</h3>
+            <h3 class="heading-tertiary">Technologies</h3>
 
-            <div class="technology-card">
+            <div class="technology-card scrollReveal" data-animation="moveInLeft">
                 <svg class="technology-card__icon">
                     <use xlink:href="assets/img/sprite.svg#icon-html5"></use>
                 </svg>
             </div>
 
-            <div class="technology-card">
+            <div class="technology-card scrollReveal" data-animation="moveInLeft" data-timeout="150">
                 <svg class="technology-card__icon">
                     <use xlink:href="assets/img/sprite.svg#icon-css3"></use>
                 </svg>
             </div>
 
-            <div class="technology-card">
+            <div class="technology-card scrollReveal" data-animation="moveInLeft" data-timeout="200">
                 <svg class="technology-card__icon">
                     <use xlink:href="assets/img/sprite.svg#icon-sass"></use>
                 </svg>
             </div>
 
-            <div class="technology-card">
+            <div class="technology-card scrollReveal" data-animation="moveInLeft" data-timeout="250">
                 <svg class="technology-card__icon">
                     <use xlink:href="assets/img/sprite.svg#icon-javascript"></use>
                 </svg>
             </div>
 
-            <div class="technology-card">
+            <div class="technology-card scrollReveal" data-animation="moveInLeft" data-timeout="300">
                 <svg class="technology-card__icon">
                     <use xlink:href="assets/img/sprite.svg#icon-jquery"></use>
                 </svg>
             </div>
 
-            <div class="technology-card">
+            <div class="technology-card scrollReveal" data-animation="moveInLeft" data-timeout="350">
                 <svg class="technology-card__icon">
                     <use xlink:href="assets/img/sprite.svg#icon-wordpress"></use>
                 </svg>
             </div>
 
-            <div class="technology-card">
+            <div class="technology-card scrollReveal" data-animation="moveInRight" data-timeout="350">
                 <svg class="technology-card__icon">
                     <use xlink:href="assets/img/sprite.svg#icon-php"></use>
                 </svg>
             </div>
 
-            <div class="technology-card">
+            <div class="technology-card scrollReveal" data-animation="moveInRight" data-timeout="300">
                 <svg class="technology-card__icon">
                     <use xlink:href="assets/img/sprite.svg#icon-gulp"></use>
                 </svg>
             </div>
 
-            <div class="technology-card">
+            <div class="technology-card scrollReveal" data-animation="moveInRight" data-timeout="250">
                 <svg class="technology-card__icon">
                     <use xlink:href="assets/img/sprite.svg#icon-git"></use>
                 </svg>
             </div>
 
-            <div class="technology-card">
+            <div class="technology-card scrollReveal" data-animation="moveInRight" data-timeout="200">
                 <svg class="technology-card__icon technology-card__icon--github">
                     <use xlink:href="assets/img/sprite.svg#icon-github"></use>
                 </svg>
             </div>
 
-            <div class="technology-card">
+            <div class="technology-card scrollReveal" data-animation="moveInRight" data-timeout="150">
                 <svg class="technology-card__icon">
                     <use xlink:href="assets/img/sprite.svg#icon-adobephotoshop"></use>
                 </svg>
             </div>
 
-            <div class="technology-card">
+            <div class="technology-card scrollReveal" data-animation="moveInRight">
                 <svg class="technology-card__icon">
                     <use xlink:href="assets/img/sprite.svg#icon-adobeillustrator"></use>
                 </svg>
@@ -324,17 +550,17 @@
 
 
     <!--====== PORTFOLIO SECTION ======-->
-    <section class="portfolio" id="portfolio">
+    <section class="portfolio section" id="portfolio">
         <h2 class="heading-secondary">
             <span class="heading-secondary--main">Portfolio</span>
             <span class="heading-secondary--sub">What we did?</span>
         </h2>
 
-        <h3 class="heading-tertiary">Client Work</h3>
+        <h3 class="heading-tertiary heading-tertiary--center">Client Work</h3>
 
         <div class="portfolio__wrapper">
 
-            <div class="portfolio-card">
+            <div class="portfolio-card scrollReveal" data-animation="moveInTop">
                 <figure class="portfolio-card__img-container">
                     <img src="assets/img/vero.jpeg" alt="" class="portfolio-card__img">
                     <figcaption>
@@ -354,7 +580,7 @@
                 </button>
             </div>
 
-            <div class="portfolio-card">
+            <div class="portfolio-card scrollReveal" data-animation="moveInBottom" data-timeout="250">
                 <figure class="portfolio-card__img-container">
                     <img src="assets/img/money1.jpg" alt="" class="portfolio-card__img">
                     <figcaption>
@@ -374,7 +600,7 @@
                 </button>
             </div>
 
-            <div class="portfolio-card">
+            <div class="portfolio-card scrollReveal" data-animation="moveInTop" data-timeout="300">
                 <figure class="portfolio-card__img-container">
                     <img src="assets/img/money2.jpg" alt="" class="portfolio-card__img">
                     <figcaption>
@@ -393,12 +619,32 @@
                     View project!
                 </button>
             </div>
+
+            <div class="portfolio-card scrollReveal" data-animation="moveInBottom" data-timeout="350" >
+                <figure class="portfolio-card__img-container">
+                    <img src="assets/img/money1.jpg" alt="" class="portfolio-card__img">
+                    <figcaption>
+                        <svg class="portfolio-card__icon">
+                            <use xlink:href="assets/img/sprite.svg#icon-magnifying-glass"></use>
+                        </svg>
+                    </figcaption>
+                </figure>
+
+                <h4 class="heading-quaternary portfolio-card__heading">Comming soon</h4>
+                <p class="portfolio-card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptatum consequatur perspiciatis dolore...</p>
+                <button class="portfolio-card__btn btn">
+                    <svg>
+                        <use xlink:href="assets/img/sprite.svg#icon-magnifying-glass"></use>
+                    </svg>
+                    View project!
+                </button>
+            </div>
         </div>
 
-        <h3 class="heading-tertiary">Wordpress Themes</h3>
+        <h3 class="heading-tertiary heading-tertiary--center">Wordpress Themes</h3>
 
         <div class="portfolio__wrapper">
-            <div class="portfolio-card">
+            <div class="portfolio-card scrollReveal" data-animation="moveInBottom">
                 <figure class="portfolio-card__img-container">
                     <img src="assets/img/money3.jpg" alt="" class="portfolio-card__img">
                     <figcaption>
@@ -418,7 +664,7 @@
                 </button>
             </div>
 
-            <div class="portfolio-card">
+            <div class="portfolio-card scrollReveal" data-animation="moveInTop" data-timeout="250">
                 <figure class="portfolio-card__img-container">
                     <img src="assets/img/money4.jpg" alt="" class="portfolio-card__img">
                     <figcaption>
@@ -438,9 +684,29 @@
                 </button>
             </div>
 
-            <div class="portfolio-card">
+            <div class="portfolio-card scrollReveal" data-animation="moveInBottom" data-timeout="300">
                 <figure class="portfolio-card__img-container">
                     <img src="assets/img/money5.jpg" alt="" class="portfolio-card__img">
+                    <figcaption>
+                        <svg class="portfolio-card__icon">
+                            <use xlink:href="assets/img/sprite.svg#icon-magnifying-glass"></use>
+                        </svg>
+                    </figcaption>
+                </figure>
+
+                <h4 class="heading-quaternary portfolio-card__heading">Comming soon</h4>
+                <p class="portfolio-card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptatum consequatur perspiciatis dolore...</p>
+                <button class="portfolio-card__btn btn">
+                    <svg>
+                        <use xlink:href="assets/img/sprite.svg#icon-magnifying-glass"></use>
+                    </svg>
+                    View project!
+                </button>
+            </div>
+
+            <div class="portfolio-card scrollReveal" data-animation="moveInTop" data-timeout="350">
+                <figure class="portfolio-card__img-container" >
+                    <img src="assets/img/money4.jpg" alt="" class="portfolio-card__img">
                     <figcaption>
                         <svg class="portfolio-card__icon">
                             <use xlink:href="assets/img/sprite.svg#icon-magnifying-glass"></use>
@@ -463,7 +729,7 @@
 
 
     <!--====== CONTACT SECTION ======-->
-    <section class="contact" id="contact">
+    <section class="contact section" id="contact">
         <h2 class="heading-secondary">
             <span class="heading-secondary--main">Contact Us</span>
             <span class="heading-secondary--sub">Let's talk!</span>
@@ -471,8 +737,8 @@
 
 
         <!-- contact form -->
-        <div class="contact__form-container">
-            <h3 class="heading-tertiary">Request a project</h3>
+        <div class="contact__form-container scrollReveal" data-animation="moveInLeft" >
+            <h3 class="heading-tertiary heading-tertiary--center">Request a project</h3>
 
             <form action="#" class="form">
                 <input type="text" class="form__input form__input--firstname" placeholder="First Name *" required>
@@ -520,39 +786,42 @@
 
 
         <!-- info -->
-        <div class="contact__info-container">
-            <h3 class="heading-tertiary">Get in touch</h3>
+        <div class="contact__info-container scrollReveal" data-animation="moveInRight">
+            <h3 class="heading-tertiary heading-tertiary--center">Get in touch</h3>
 
-            <div class="info-card">
-                <svg class="info-card__icon">
-                    <use xlink:href="assets/img/sprite.svg#icon-location-pin"></use>
-                </svg>
-                <h4 class="heading-quaternary">Location</h4>
-                <p class="paragraph-primary">Athens, Greece</p>
-            </div>
+            <div class="contact__info-container__list">
 
-            <div class="info-card">
-                <svg class="info-card__icon">
-                    <use xlink:href="assets/img/sprite.svg#icon-mail"></use>
-                </svg>
-                <h4 class="heading-quaternary">E-mail</h4>
-                <p class="paragraph-primary">info@nplab.com</p>
-            </div>
+                <div class="info-card">
+                    <svg class="info-card__icon">
+                        <use xlink:href="assets/img/sprite.svg#icon-location-pin"></use>
+                    </svg>
+                    <h4 class="heading-quaternary">Location</h4>
+                    <p class="paragraph-primary">Athens, Greece</p>
+                </div>
 
-            <div class="info-card">
-                <svg class="info-card__icon">
-                    <use xlink:href="assets/img/sprite.svg#icon-skype"></use>
-                </svg>
-                <h4 class="heading-quaternary">Skype</h4>
-                <p class="paragraph-primary">nplab2k16</p>
-            </div>
+                <div class="info-card">
+                    <svg class="info-card__icon">
+                        <use xlink:href="assets/img/sprite.svg#icon-mail"></use>
+                    </svg>
+                    <h4 class="heading-quaternary">E-mail</h4>
+                    <p class="paragraph-primary">info@nplab.com</p>
+                </div>
 
-            <div class="info-card">
-                <svg class="info-card__icon">
-                    <use xlink:href="assets/img/sprite.svg#icon-phone"></use>
-                </svg>
-                <h4 class="heading-quaternary">Phone</h4>
-                <p class="paragraph-primary">+30 6977456192</p>
+                <div class="info-card">
+                    <svg class="info-card__icon">
+                        <use xlink:href="assets/img/sprite.svg#icon-skype"></use>
+                    </svg>
+                    <h4 class="heading-quaternary">Skype</h4>
+                    <p class="paragraph-primary">nplab2k16</p>
+                </div>
+
+                <div class="info-card">
+                    <svg class="info-card__icon">
+                        <use xlink:href="assets/img/sprite.svg#icon-phone"></use>
+                    </svg>
+                    <h4 class="heading-quaternary">Phone</h4>
+                    <p class="paragraph-primary">+30 6977456192</p>
+                </div>
             </div>
         </div>
     </section>
@@ -588,7 +857,7 @@
             <h4 class="footer__heading">Scroll Top</h4>
 
 
-            <a class="footer__circle footer__circle--scrolltop" href="#home" onclick="return false">
+            <a class="footer__circle footer__circle--scrolltop smoothscroll" href="#home">
                 <svg class="footer__icon footer__icon--scrolltop">
                     <use xlink:href="assets/img/sprite.svg#icon-arrow-up2"></use>
                 </svg>
@@ -598,6 +867,477 @@
         <!-- footer copyright text -->
         <p class="footer__text">&copy; 2016-2018 Net Programming Lab Ltd. All rights reserved.</p>
     </footer>
+=======
+        </section>
+
+
+
+        <!--====== SERVICES SECTION ======-->
+        <section class="services section" id="services">
+            <h2 class="heading-secondary">
+                <span class="heading-secondary--main">Our Services</span>
+                <span class="heading-secondary--sub">What we do?</span>
+            </h2>
+
+            <div class="service-card">
+                <div class="service-card__text">
+                    <h3 class="heading-tertiary">Web design & development</h3>
+                    <p class="paragraph-primary paragraph-primary--justify">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta consectetur repellat a minima dolores!
+                        Nobis, odio. Ullam vitae quam, iste soluta eaque non nulla nemo, quo, cumque sapiente sed aut earum
+                        saepe aperiam voluptatum eius incidunt exercitationem voluptas libero consequatur deleniti! Culpa
+                        commodi fuga itaque nisi quo aut, tempore expedita!</p>
+                </div>
+                <img class="service-card__img scrollReveal" data-animation="moveInBottom" src="assets/img/web.svg">
+            </div>
+
+            <div class="hr"></div>
+
+            <div class="service-card service-card--reverse">
+                <div class="service-card__text">
+                    <h3 class="heading-tertiary">Wordpress development</h3>
+                    <p class="paragraph-primary paragraph-primary--justify">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta consectetur repellat a minima dolores!
+                        Nobis, odio. Ullam vitae quam, iste soluta eaque non nulla nemo, quo, cumque sapiente sed aut earum
+                        saepe aperiam voluptatum eius incidunt exercitationem voluptas libero consequatur deleniti! Culpa
+                        commodi fuga itaque nisi quo aut, tempore expedita!</p>
+                </div>
+
+                <img class="service-card__img scrollReveal" data-animation="moveInBottom" src="assets/img/wp.svg">
+            </div>
+
+            <div class="hr"></div>
+
+            <div class="service-card">
+                <div class="service-card__text">
+                    <h3 class="heading-tertiary">E-commerce</h3>
+                    <p class="paragraph-primary paragraph-primary--justify">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta consectetur repellat a minima dolores!
+                        Nobis, odio. Ullam vitae quam, iste soluta eaque non nulla nemo, quo, cumque sapiente sed aut earum
+                        saepe aperiam voluptatum eius incidunt exercitationem voluptas libero consequatur deleniti! Culpa
+                        commodi fuga itaque nisi quo aut, tempore expedita!</p>
+                </div>
+                <img class="service-card__img scrollReveal" data-animation="moveInBottom" src="assets/img/eshop.svg">
+            </div>
+
+            <div class="hr"></div>
+
+            <div class="service-card service-card--reverse">
+                <div class="service-card__text">
+                    <h3 class="heading-tertiary">Graphic & logo design</h3>
+                    <p class="paragraph-primary paragraph-primary--justify">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta consectetur repellat a minima dolores!
+                        Nobis, odio. Ullam vitae quam, iste soluta eaque non nulla nemo, quo, cumque sapiente sed aut earum
+                        saepe aperiam voluptatum eius incidunt exercitationem voluptas libero consequatur deleniti! Culpa
+                        commodi fuga itaque nisi quo aut, tempore expedita!</p>
+                </div>
+                <img class="service-card__img scrollReveal" data-animation="moveInBottom" src="assets/img/design.svg">
+            </div>
+
+            <div class="services__technologies">
+                <h3 class="heading-tertiary">Technologies</h3>
+
+                <div class="technology-card scrollReveal" data-animation="moveInLeft">
+                    <svg class="technology-card__icon">
+                        <use xlink:href="assets/img/sprite.svg#icon-html5"></use>
+                    </svg>
+                </div>
+
+                <div class="technology-card scrollReveal" data-animation="moveInLeft" data-timeout="150">
+                    <svg class="technology-card__icon">
+                        <use xlink:href="assets/img/sprite.svg#icon-css3"></use>
+                    </svg>
+                </div>
+
+                <div class="technology-card scrollReveal" data-animation="moveInLeft" data-timeout="200">
+                    <svg class="technology-card__icon">
+                        <use xlink:href="assets/img/sprite.svg#icon-sass"></use>
+                    </svg>
+                </div>
+
+                <div class="technology-card scrollReveal" data-animation="moveInLeft" data-timeout="250">
+                    <svg class="technology-card__icon">
+                        <use xlink:href="assets/img/sprite.svg#icon-javascript"></use>
+                    </svg>
+                </div>
+
+                <div class="technology-card scrollReveal" data-animation="moveInLeft" data-timeout="300">
+                    <svg class="technology-card__icon">
+                        <use xlink:href="assets/img/sprite.svg#icon-jquery"></use>
+                    </svg>
+                </div>
+
+                <div class="technology-card scrollReveal" data-animation="moveInLeft" data-timeout="350">
+                    <svg class="technology-card__icon">
+                        <use xlink:href="assets/img/sprite.svg#icon-wordpress"></use>
+                    </svg>
+                </div>
+
+                <div class="technology-card scrollReveal" data-animation="moveInRight" data-timeout="350">
+                    <svg class="technology-card__icon">
+                        <use xlink:href="assets/img/sprite.svg#icon-php"></use>
+                    </svg>
+                </div>
+
+                <div class="technology-card scrollReveal" data-animation="moveInRight" data-timeout="300">
+                    <svg class="technology-card__icon">
+                        <use xlink:href="assets/img/sprite.svg#icon-gulp"></use>
+                    </svg>
+                </div>
+
+                <div class="technology-card scrollReveal" data-animation="moveInRight" data-timeout="250">
+                    <svg class="technology-card__icon">
+                        <use xlink:href="assets/img/sprite.svg#icon-git"></use>
+                    </svg>
+                </div>
+
+                <div class="technology-card scrollReveal" data-animation="moveInRight" data-timeout="200">
+                    <svg class="technology-card__icon technology-card__icon--github">
+                        <use xlink:href="assets/img/sprite.svg#icon-github"></use>
+                    </svg>
+                </div>
+
+                <div class="technology-card scrollReveal" data-animation="moveInRight" data-timeout="150">
+                    <svg class="technology-card__icon">
+                        <use xlink:href="assets/img/sprite.svg#icon-adobephotoshop"></use>
+                    </svg>
+                </div>
+
+                <div class="technology-card scrollReveal" data-animation="moveInRight">
+                    <svg class="technology-card__icon">
+                        <use xlink:href="assets/img/sprite.svg#icon-adobeillustrator"></use>
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!--====== PORTFOLIO SECTION ======-->
+        <section class="portfolio section" id="portfolio">
+            <h2 class="heading-secondary">
+                <span class="heading-secondary--main">Portfolio</span>
+                <span class="heading-secondary--sub">What we did?</span>
+            </h2>
+
+            <h3 class="heading-tertiary heading-tertiary--center">Client Work</h3>
+
+            <div class="portfolio__wrapper">
+
+                <div class="portfolio-card scrollReveal" data-animation="moveInTop">
+                    <figure class="portfolio-card__img-container">
+                        <img src="assets/img/vero.jpeg" alt="" class="portfolio-card__img">
+                        <figcaption>
+                            <svg class="portfolio-card__icon">
+                                <use xlink:href="assets/img/sprite.svg#icon-magnifying-glass"></use>
+                            </svg>
+                        </figcaption>
+                    </figure>
+
+                    <h4 class="heading-quaternary portfolio-card__heading">Veronika Panko</h4>
+                    <p class="portfolio-card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptatum consequatur perspiciatis dolore...</p>
+                    <button class="portfolio-card__btn btn">
+                        <svg>
+                            <use xlink:href="assets/img/sprite.svg#icon-magnifying-glass"></use>
+                        </svg>
+                        View project!
+                    </button>
+                </div>
+
+                <div class="portfolio-card scrollReveal" data-animation="moveInBottom" data-timeout="250">
+                    <figure class="portfolio-card__img-container">
+                        <img src="assets/img/money1.jpg" alt="" class="portfolio-card__img">
+                        <figcaption>
+                            <svg class="portfolio-card__icon">
+                                <use xlink:href="assets/img/sprite.svg#icon-magnifying-glass"></use>
+                            </svg>
+                        </figcaption>
+                    </figure>
+
+                    <h4 class="heading-quaternary portfolio-card__heading">Comming soon</h4>
+                    <p class="portfolio-card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptatum consequatur perspiciatis dolore...</p>
+                    <button class="portfolio-card__btn btn">
+                        <svg>
+                            <use xlink:href="assets/img/sprite.svg#icon-magnifying-glass"></use>
+                        </svg>
+                        View project!
+                    </button>
+                </div>
+
+                <div class="portfolio-card scrollReveal" data-animation="moveInTop" data-timeout="300">
+                    <figure class="portfolio-card__img-container">
+                        <img src="assets/img/money2.jpg" alt="" class="portfolio-card__img">
+                        <figcaption>
+                            <svg class="portfolio-card__icon">
+                                <use xlink:href="assets/img/sprite.svg#icon-magnifying-glass"></use>
+                            </svg>
+                        </figcaption>
+                    </figure>
+
+                    <h4 class="heading-quaternary portfolio-card__heading">Comming soon</h4>
+                    <p class="portfolio-card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptatum consequatur perspiciatis dolore...</p>
+                    <button class="portfolio-card__btn btn">
+                        <svg>
+                            <use xlink:href="assets/img/sprite.svg#icon-magnifying-glass"></use>
+                        </svg>
+                        View project!
+                    </button>
+                </div>
+
+                <div class="portfolio-card scrollReveal" data-animation="moveInBottom" data-timeout="350">
+                    <figure class="portfolio-card__img-container">
+                        <img src="assets/img/money1.jpg" alt="" class="portfolio-card__img">
+                        <figcaption>
+                            <svg class="portfolio-card__icon">
+                                <use xlink:href="assets/img/sprite.svg#icon-magnifying-glass"></use>
+                            </svg>
+                        </figcaption>
+                    </figure>
+
+                    <h4 class="heading-quaternary portfolio-card__heading">Comming soon</h4>
+                    <p class="portfolio-card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptatum consequatur perspiciatis dolore...</p>
+                    <button class="portfolio-card__btn btn">
+                        <svg>
+                            <use xlink:href="assets/img/sprite.svg#icon-magnifying-glass"></use>
+                        </svg>
+                        View project!
+                    </button>
+                </div>
+            </div>
+
+            <h3 class="heading-tertiary heading-tertiary--center">Wordpress Themes</h3>
+
+            <div class="portfolio__wrapper">
+                <div class="portfolio-card scrollReveal" data-animation="moveInBottom">
+                    <figure class="portfolio-card__img-container">
+                        <img src="assets/img/money3.jpg" alt="" class="portfolio-card__img">
+                        <figcaption>
+                            <svg class="portfolio-card__icon">
+                                <use xlink:href="assets/img/sprite.svg#icon-magnifying-glass"></use>
+                            </svg>
+                        </figcaption>
+                    </figure>
+
+                    <h4 class="heading-quaternary portfolio-card__heading">Comming soon</h4>
+                    <p class="portfolio-card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptatum consequatur perspiciatis dolore...</p>
+                    <button class="portfolio-card__btn btn">
+                        <svg>
+                            <use xlink:href="assets/img/sprite.svg#icon-magnifying-glass"></use>
+                        </svg>
+                        View project!
+                    </button>
+                </div>
+
+                <div class="portfolio-card scrollReveal" data-animation="moveInTop" data-timeout="250">
+                    <figure class="portfolio-card__img-container">
+                        <img src="assets/img/money4.jpg" alt="" class="portfolio-card__img">
+                        <figcaption>
+                            <svg class="portfolio-card__icon">
+                                <use xlink:href="assets/img/sprite.svg#icon-magnifying-glass"></use>
+                            </svg>
+                        </figcaption>
+                    </figure>
+
+                    <h4 class="heading-quaternary portfolio-card__heading">Comming soon</h4>
+                    <p class="portfolio-card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptatum consequatur perspiciatis dolore...</p>
+                    <button class="portfolio-card__btn btn">
+                        <svg>
+                            <use xlink:href="assets/img/sprite.svg#icon-magnifying-glass"></use>
+                        </svg>
+                        View project!
+                    </button>
+                </div>
+
+                <div class="portfolio-card scrollReveal" data-animation="moveInBottom" data-timeout="300">
+                    <figure class="portfolio-card__img-container">
+                        <img src="assets/img/money5.jpg" alt="" class="portfolio-card__img">
+                        <figcaption>
+                            <svg class="portfolio-card__icon">
+                                <use xlink:href="assets/img/sprite.svg#icon-magnifying-glass"></use>
+                            </svg>
+                        </figcaption>
+                    </figure>
+
+                    <h4 class="heading-quaternary portfolio-card__heading">Comming soon</h4>
+                    <p class="portfolio-card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptatum consequatur perspiciatis dolore...</p>
+                    <button class="portfolio-card__btn btn">
+                        <svg>
+                            <use xlink:href="assets/img/sprite.svg#icon-magnifying-glass"></use>
+                        </svg>
+                        View project!
+                    </button>
+                </div>
+
+                <div class="portfolio-card scrollReveal" data-animation="moveInTop" data-timeout="350">
+                    <figure class="portfolio-card__img-container">
+                        <img src="assets/img/money4.jpg" alt="" class="portfolio-card__img">
+                        <figcaption>
+                            <svg class="portfolio-card__icon">
+                                <use xlink:href="assets/img/sprite.svg#icon-magnifying-glass"></use>
+                            </svg>
+                        </figcaption>
+                    </figure>
+
+                    <h4 class="heading-quaternary portfolio-card__heading">Comming soon</h4>
+                    <p class="portfolio-card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptatum consequatur perspiciatis dolore...</p>
+                    <button class="portfolio-card__btn btn">
+                        <svg>
+                            <use xlink:href="assets/img/sprite.svg#icon-magnifying-glass"></use>
+                        </svg>
+                        View project!
+                    </button>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!--====== CONTACT SECTION ======-->
+        <section class="contact section" id="contact">
+            <h2 class="heading-secondary">
+                <span class="heading-secondary--main">Contact Us</span>
+                <span class="heading-secondary--sub">Let's talk!</span>
+            </h2>
+
+
+            <!-- contact form -->
+            <div class="contact__form-container scrollReveal" data-animation="moveInLeft">
+                <h3 class="heading-tertiary heading-tertiary--center">Request a project</h3>
+
+                <form action="#" class="form">
+                    <input type="text" class="form__input form__input--firstname" placeholder="First Name *" required>
+                    <input type="text" class="form__input form__input--lastname" placeholder="Last Name *" required>
+                    <input type="email" class="form__input form__input--email" placeholder="Email address *" required>
+
+                    <h4 class="form__text">I need help with:</h4>
+
+                    <div class="form__radio-group">
+                        <input type="radio" class="form__radio-input" id="webdev" name="service">
+                        <label for="webdev" class="form__radio-label">
+                            <span class="form__radio-button"></span>
+                            Web development
+                        </label>
+                    </div>
+
+                    <div class="form__radio-group">
+                        <input type="radio" class="form__radio-input" id="wp" name="service">
+                        <label for="wp" class="form__radio-label">
+                            <span class="form__radio-button"></span>
+                            Wordpress
+                        </label>
+                    </div>
+
+                    <div class="form__radio-group">
+                        <input type="radio" class="form__radio-input" id="ecommerce" name="service">
+                        <label for="ecommerce" class="form__radio-label">
+                            <span class="form__radio-button"></span>
+                            E-commerce
+                        </label>
+                    </div>
+
+                    <div class="form__radio-group">
+                        <input type="radio" class="form__radio-input" id="logo" name="service">
+                        <label for="logo" class="form__radio-label">
+                            <span class="form__radio-button"></span>
+                            Logo design
+                        </label>
+                    </div>
+
+                    <textarea class="form__textarea" tabindex="5" placeholder="Message *" aria-invalid="true" rows="10" cols="50"></textarea>
+                    <button class="btn form__btn">Send</button>
+                </form>
+            </div>
+
+
+            <!-- info -->
+            <div class="contact__info-container scrollReveal" data-animation="moveInRight">
+                <h3 class="heading-tertiary heading-tertiary--center">Get in touch</h3>
+
+                <div class="contact__info-container__list">
+
+                    <div class="info-card">
+                        <svg class="info-card__icon">
+                            <use xlink:href="assets/img/sprite.svg#icon-location-pin"></use>
+                        </svg>
+                        <h4 class="heading-quaternary">Location</h4>
+                        <p class="paragraph-primary">Athens, Greece</p>
+                    </div>
+
+                    <div class="info-card">
+                        <svg class="info-card__icon">
+                            <use xlink:href="assets/img/sprite.svg#icon-mail"></use>
+                        </svg>
+                        <h4 class="heading-quaternary">E-mail</h4>
+                        <p class="paragraph-primary">info@nplab.com</p>
+                    </div>
+
+                    <div class="info-card">
+                        <svg class="info-card__icon">
+                            <use xlink:href="assets/img/sprite.svg#icon-skype"></use>
+                        </svg>
+                        <h4 class="heading-quaternary">Skype</h4>
+                        <p class="paragraph-primary">nplab2k16</p>
+                    </div>
+
+                    <div class="info-card">
+                        <svg class="info-card__icon">
+                            <use xlink:href="assets/img/sprite.svg#icon-phone"></use>
+                        </svg>
+                        <h4 class="heading-quaternary">Phone</h4>
+                        <p class="paragraph-primary">+30 6977456192</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!--====== FOOTER ======-->
+        <footer class="footer" id="footer">
+            <!-- footer set (social) -->
+            <div class="footer__set footer__set--social">
+                <h4 class="footer__heading">Follow Us :</h4>
+
+                <a class="footer__circle" href="#" onclick="return false;">
+                    <svg class="footer__icon">
+                        <use xlink:href="assets/img/sprite.svg#icon-facebook"></use>
+                    </svg>
+                </a>
+                <a class="footer__circle" href="#" onclick="return false;">
+                    <svg class="footer__icon">
+                        <use xlink:href="assets/img/sprite.svg#icon-instagram"></use>
+                    </svg>
+                </a>
+                <a class="footer__circle" href="#" onclick="return false;">
+                    <svg class="footer__icon">
+                        <use xlink:href="assets/img/sprite.svg#icon-linkedin"></use>
+                    </svg>
+                </a>
+            </div>
+
+
+            <!-- footer set (scroll top) -->
+            <div class="footer__set footer__set--scrolltop">
+                <h4 class="footer__heading">Scroll Top</h4>
+
+
+                <a class="footer__circle footer__circle--scrolltop smoothscroll" href="#home">
+                    <svg class="footer__icon footer__icon--scrolltop">
+                        <use xlink:href="assets/img/sprite.svg#icon-arrow-up2"></use>
+                    </svg>
+                </a>
+            </div>
+
+            <!-- footer copyright text -->
+            <p class="footer__text">&copy; 2016-2018 Net Programming Lab Ltd. All rights reserved.</p>
+        </footer>
+
+    </main>
+    <!--/container-all-->
+>>>>>>> 3649a29766e855e6d826728aa5b76ab17fc257c5
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/app.js"></script>
 </body>
 
+<<<<<<< HEAD
 </html>
+=======
+</html>
+>>>>>>> 3649a29766e855e6d826728aa5b76ab17fc257c5
